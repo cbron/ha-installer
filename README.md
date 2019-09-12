@@ -1,3 +1,4 @@
+## HA Installer
 
 Some basic scripts to:
   1) bring up boxes with docker installed
@@ -19,16 +20,17 @@ terraform apply
 
 #### Install kubernetes
 
-Add IP's and ssh key in cluster.yml and run:
+Add IP's and ssh key in cluster.yml
 
-`rke up`
+```
+rke up
+```
 
-Add `--config rke-config.yml` to specify a different config file. 
-
+Run command with `--config rke-config.yml` to specify a different file.
 
 #### Installing Rancher
 
-There are options in helm script for deploying local chart and image vs official chart.
+There are options in helm script for deploying local (custom) chart and image.
 
 ```
 ./helm.sh
