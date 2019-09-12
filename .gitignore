@@ -1,0 +1,12 @@
+.terraform
+*.tfstate*
+*.rkestate
+.idea
+.DS_store
+
+
+# Project files we are skipping purposefully
+terraform.tfvars
+kube_config_cluster.yml
+terraform.tfstate
+cluster.yml

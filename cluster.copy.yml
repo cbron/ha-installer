@@ -1,0 +1,20 @@
+kubernetes_version: "v1.14.6-rancher1-1"
+nodes:
+  - address: 11.22.33.44
+    port: "22"
+    role: [controlplane,etcd,worker]
+    user: root
+    docker_socket: /var/run/docker.sock
+    ssh_key_path: /path/to/ssh/key
+  - address: 55.66.77.88
+    port: "22"
+    role: [controlplane,etcd,worker]
+    user: root
+    docker_socket: /var/run/docker.sock
+    ssh_key_path: /path/to/ssh/key
+services:
+  etcd:
+    snapshot: null
+    creation: 6h
+    retention: 24h
+ssh_agent_auth: true
