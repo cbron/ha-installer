@@ -20,6 +20,8 @@ kubectl -n kube-system rollout status deploy/cert-manager
 echo "installing rancher"
 
 # # For custom helm or custom docker image use these commands from rancher dir
+# # with chart.yaml version and appVersion as 'latest', chart.values rancherImage as your image,
+# # and rancherImagePullPolicy set to always.
 # helm install --dry-run ./chart -n rancher
 # helm install ./chart -n rancher --namespace cattle-system --set hostname=localhost
 
