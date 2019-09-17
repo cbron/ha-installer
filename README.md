@@ -10,7 +10,7 @@ Really this should all be done with terraform, but it's necessary sometimes to m
 
 #### Bring up boxes and install docker
 
-Fill out terraform.tfvars, then:
+Fill out terraform.tfvars with linode token and your info
 
 ```
 terraform init
