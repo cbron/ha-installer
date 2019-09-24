@@ -22,7 +22,7 @@ resource "linode_instance" "ha_instances" {
       host     = self.ip_address
       user     = "root"
       agent    = "true"
-      # password = var.root_pass
+      password = var.root_pass
       # private_key = var.ssh_key
     }
     inline = [
