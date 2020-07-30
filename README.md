@@ -28,9 +28,16 @@ rke up
 
 Run command with `--config rke-config.yml` to specify a different file.
 
+Troubleshooting:
+
+* If you get an error message about etcd saying ` Failed to reconcile`, try `rke remove` and `rke up` again
+* If ssh key gets stuck, try logging in manually with `ssh root@ip -i /my/key` and then trying again
+
 #### Installing Rancher
 
-There are options in helm script for deploying local (custom) chart and image.
+There are options in helm script for deploying local (custom) chart and image. Currently setup for helm 3 using a binary names `helm3`.
+
+Either run commands by hand or configure and do:
 
 ```
 ./helm.sh

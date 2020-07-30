@@ -8,7 +8,7 @@ locals {
 
 resource "linode_instance" "ha_instances" {
   count = var.node_count
-  image = "linode/ubuntu19.04"
+  image = "linode/ubuntu18.04"
   label = "${var.label}_instance_${local.create_time}_${count.index}"
   region = "us-central"
   type = "g6-standard-4" # https://cloud.linode.com/api/v4/linode/types
